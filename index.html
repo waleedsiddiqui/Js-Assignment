@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Js-Assignment</title>
+</head>
+<body>
+    
+  <p style="text-align:center">Pakistan<input type="checkbox" id="mycheck" onclick="myFunction()"></p>
+  <p style="text-align:center">India   &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="mycheck1" onclick="myFunctions()"></p>
+    
+
+
+  <h2 style="text-align:center">Find Even and Odd No using Javascript!</h2>
+  <label>Enter Number:</label>
+  <input type="number" name="" id="oddEven" onkeyup="check()">&nbsp;<span id="showmsg"> </span>
+    
+  <script>
+    function myFunction(){
+    var checkBox = document.getElementById("mycheck")
+      if (checkBox.checked == true){
+      console.log("I love Pakistan")}
+          
+    }
+  function myFunctions(){
+      var checkbox1 = document.getElementById("mycheck1")
+      if(checkbox1.checked ==true){
+          console.log("I donot love India")
+      }
+  }
+
+  function check(){
+    var num = document.getElementById("oddEven").value
+    if(num % 2===0){
+      document.getElementById("showmsg").innerHTML = num+ " is Even"
+    }
+    else{
+      document.getElementById("showmsg").innerHTML = num+ " sis Odd"
+    }
+    if(num == ""){
+      document.getElementById("showmsg").innerHTML = ""
+    }
+     }
+  
+    </script>
+</body>
+</html>
